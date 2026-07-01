@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — SammyJoze</title>
+  <meta name="description" content="Privacy Policy for Sammy Joze apps, Chrome extensions, and web products including Select Lens, Citadel Vault, and Miniapps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" class="site-brand">SammyJoze</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="/privacy" class="is-active">Privacy</a>
+        <a href="/terms">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <a href="/" class="hero__back">&larr; Back to home</a>
+    <span class="hero__badge">Legal</span>
+    <h1>Privacy Policy</h1>
+    <p class="hero__lead">This policy explains what we collect across Sammy Joze products, how data is used, and the choices you control. It applies to every app, extension, and website we publish.</p>
+    <div class="hero__meta">
+      <span><strong>Last updated:</strong> June 30, 2026</span>
+      <span><strong>Applies to:</strong> sammyjoze.com and all published apps &amp; extensions</span>
+    </div>
+  </section>
+
+  <div class="legal-layout">
+    <aside class="toc" aria-label="Table of contents">
+      <p class="toc__label">On this page</p>
+      <ul>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#what-we-collect">What we collect</a></li>
+        <li><a href="#by-product">By product type</a></li>
+        <li><a href="#how-we-use">How we use data</a></li>
+        <li><a href="#third-party-ai">Third-party AI &amp; APIs</a></li>
+        <li><a href="#sharing">Sharing</a></li>
+        <li><a href="#retention-security">Retention &amp; security</a></li>
+        <li><a href="#your-choices">Your choices</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <div class="legal-content">
+      <article id="scope" class="section-card">
+        <h2>1. Scope</h2>
+        <p>This Privacy Policy applies to <strong>sammyjoze.com</strong> and all software, Chrome extensions, web apps, desktop apps, and related services published by Sammy Joze (collectively, the &ldquo;Services&rdquo;).</p>
+        <p>Products covered include, without limitation:</p>
+        <ul>
+          <li><strong>Select Lens</strong> — Chrome extension for AI-powered text actions (Define, Steps, Summary, Simplify)</li>
+          <li><strong>Citadel Vault</strong> — Chrome extension, web app, and desktop password manager</li>
+          <li><strong>Miniapps hub</strong> — workspace web apps at miniapps.webebble.com (People Vault, EBT Vault, Secrets Vault, Writing Brain, and others)</li>
+          <li><strong>Other Chrome extensions</strong> — Minitools, WordSmith, and future extensions</li>
+          <li><strong>Product sites</strong> — such as citedalvault.com, which may reference this policy or host product-specific legal pages</li>
+        </ul>
+        <p>By using any Service, you acknowledge this policy. Product-specific help pages may describe additional details, but this document is the umbrella policy for all Sammy Joze offerings.</p>
+      </article>
+
+      <article id="what-we-collect" class="section-card">
+        <h2>2. What we collect</h2>
+        <p>What we collect depends on which product you use. Across our Services, we may process:</p>
+        <ul>
+          <li><strong>Account information</strong> — email address, display name, authentication credentials, and profile settings when you create an account (for example, Citadel Vault or Miniapps).</li>
+          <li><strong>User content</strong> — data you choose to store or submit, such as vault entries, workspace records, documents, or highlighted text you send to an AI provider.</li>
+          <li><strong>API keys and credentials you provide</strong> — third-party keys you enter to enable features (for example, an OpenAI API key in Select Lens). See the product table below for where keys are stored.</li>
+          <li><strong>Website content you actively use</strong> — page text or selections you trigger an extension to read, only when you invoke a feature and only as described for that product.</li>
+          <li><strong>Service logs</strong> — operational data such as timestamps, IP addresses, device or browser type, error reports, and performance metrics needed to run and secure our Services.</li>
+          <li><strong>Support messages</strong> — information you send when contacting us for help, including email content and attachments.</li>
+        </ul>
+        <div class="highlight-box">
+          <p><strong>We do not sell your personal information.</strong> We also do not use your data to determine creditworthiness, eligibility for a loan, or for lending purposes.</p>
+        </div>
+      </article>
+
+      <article id="by-product" class="section-card">
+        <h2>3. By product type</h2>
+        <p>The table below summarizes how data is handled across major product categories. Individual extension listings in the Chrome Web Store describe specific permissions.</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Examples</th>
+              <th>Account required</th>
+              <th>What we receive on our servers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BYOK extensions</strong></td>
+              <td>Select Lens</td>
+              <td>No</td>
+              <td>We do not receive your API key or highlighted text. Your OpenAI API key is stored locally in Chrome. When you run Define, Steps, Summary, or Simplify, requests go <strong>browser &rarr; OpenAI</strong> using your key. We do not operate Select Lens accounts and do not receive API keys or highlights on our servers.</td>
+            </tr>
+            <tr>
+              <td><strong>Account vault apps</strong></td>
+              <td>Citadel Vault (extension, web, desktop)</td>
+              <td>Yes</td>
+              <td>Account email and encrypted vault payloads. Vault data is encrypted <strong>client-side before sync</strong>. We cannot read your decrypted passwords, cards, notes, or TOTP secrets on our servers.</td>
+            </tr>
+            <tr>
+              <td><strong>Workspace miniapps</strong></td>
+              <td>People Vault, EBT Vault, Secrets Vault, Writing Brain (miniapps.webebble.com)</td>
+              <td>Yes</td>
+              <td>Account and workspace data you store to use the service, including records, files, and settings needed to provide collaboration and sync features.</td>
+            </tr>
+            <tr>
+              <td><strong>Utility extensions</strong></td>
+              <td>Minitools, WordSmith, future extensions</td>
+              <td>Usually no</td>
+              <td>Varies by extension. Many features use <strong>local browser storage only</strong>. Permissions and data access are described in each extension&rsquo;s Chrome Web Store listing. We collect server-side data only when a feature explicitly requires it.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Select Lens (Chrome Web Store)</h3>
+        <p>For Chrome Web Store compliance: Select Lens is bring-your-own-key (BYOK). Your OpenAI API key never leaves your device except when sent directly from your browser to OpenAI. We do not collect, transmit, or store your API key or the text you highlight.</p>
+      </article>
+
+      <article id="how-we-use" class="section-card">
+        <h2>4. How we use data</h2>
+        <p>We use information we process to:</p>
+        <ul>
+          <li><strong>Provide the Services</strong> — authenticate accounts, sync encrypted vaults, run workspace apps, and deliver features you request.</li>
+          <li><strong>Operate and improve</strong> — maintain uptime, fix bugs, understand usage patterns in aggregate, and develop new features.</li>
+          <li><strong>Security and abuse prevention</strong> — detect fraud, protect accounts, and enforce our Terms of Service.</li>
+          <li><strong>Support</strong> — respond to your questions and troubleshoot issues you report.</li>
+          <li><strong>Legal compliance</strong> — meet applicable legal obligations and respond to lawful requests.</li>
+        </ul>
+        <p>We do <strong>not</strong> sell personal information. We do <strong>not</strong> use your data for creditworthiness or lending decisions. We do <strong>not</strong> use vault contents or BYOK extension data for advertising profiles.</p>
+      </article>
+
+      <article id="third-party-ai" class="section-card">
+        <h2>5. Third-party AI and APIs</h2>
+        <p>Some products connect to third-party AI or API providers that you choose to use:</p>
+        <ul>
+          <li><strong>Select Lens</strong> — when you trigger an action, highlighted text and your prompt are sent from your browser directly to <strong>OpenAI</strong> using the API key you configured. OpenAI&rsquo;s terms and privacy policy apply to that processing. You are responsible for your API key, usage limits, and fees charged by OpenAI.</li>
+          <li><strong>Other products</strong> — if a future feature integrates a third-party AI or API, we will describe it in-product and update this policy as needed.</li>
+        </ul>
+        <p>We are not responsible for third-party providers&rsquo; handling of data once you direct your browser or account to connect to them.</p>
+      </article>
+
+      <article id="sharing" class="section-card">
+        <h2>6. Sharing</h2>
+        <p>We may share information only in these circumstances:</p>
+        <ul>
+          <li><strong>Infrastructure providers</strong> — hosting, databases, email delivery, analytics, and similar vendors that help us operate the Services, under contractual obligations to protect data.</li>
+          <li><strong>Third parties you connect</strong> — such as OpenAI when you invoke Select Lens, or other integrations you explicitly enable.</li>
+          <li><strong>Legal requirements</strong> — when required by law, regulation, legal process, or to protect the rights, safety, and security of users and Sammy Joze.</li>
+          <li><strong>Business transfers</strong> — in connection with a merger, acquisition, or sale of assets, with notice where required by law.</li>
+        </ul>
+        <p>We do <strong>not</strong> sell personal information to data brokers or advertising networks.</p>
+      </article>
+
+      <article id="retention-security" class="section-card">
+        <h2>7. Retention and security</h2>
+        <h3>Retention</h3>
+        <p>We retain account and service data for as long as your account is active or as needed to provide the Service. After account deletion, we delete or anonymize data within a reasonable period, except where retention is required by law or for legitimate security purposes (for example, backup cycles or dispute resolution).</p>
+        <p>BYOK extensions like Select Lens do not store your highlights or API keys on our servers, so there is nothing for us to retain for those items.</p>
+        <h3>Security</h3>
+        <p>We use industry-standard measures including encryption in transit (TLS), access controls, and — for vault products — client-side encryption before sync. No method of transmission or storage is 100% secure; we cannot guarantee absolute security.</p>
+      </article>
+
+      <article id="your-choices" class="section-card">
+        <h2>8. Your choices</h2>
+        <p>Depending on the product, you can:</p>
+        <ul>
+          <li><strong>Export data</strong> — use in-product export tools where available (for example, Citadel Vault settings).</li>
+          <li><strong>Delete your account</strong> — contact us or use account deletion options in the relevant app.</li>
+          <li><strong>Revoke API keys</strong> — remove or rotate keys in extension settings and at your API provider (for example, OpenAI).</li>
+          <li><strong>Uninstall extensions</strong> — remove Chrome extensions from your browser; local data stored by the extension is cleared according to Chrome&rsquo;s extension data rules.</li>
+          <li><strong>Manage browser permissions</strong> — review and revoke site access or permissions granted to any extension in Chrome settings.</li>
+          <li><strong>Opt out of non-essential communications</strong> — unsubscribe from marketing emails where offered; transactional and security messages may still be sent.</li>
+        </ul>
+      </article>
+
+      <article id="children" class="section-card">
+        <h2>9. Children's privacy</h2>
+        <p>Our Services are not directed to children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided us personal information, contact us and we will take steps to delete it.</p>
+      </article>
+
+      <article id="changes" class="section-card">
+        <h2>10. Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the &ldquo;Last updated&rdquo; date at the top of this page and, where appropriate, notify you through the Service or by email. Continued use after changes take effect constitutes acceptance of the updated policy.</p>
+      </article>
+
+      <article id="contact" class="contact-card">
+        <h2>11. Contact</h2>
+        <p>Questions about this policy, data export, account deletion, or privacy requests:</p>
+        <a class="contact-email" href="mailto:team@sammyjoze.com">team@sammyjoze.com</a>
+      </article>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; <span data-year>2026</span> SammyJoze. All rights reserved.</p>
+      <div class="site-footer__links">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="mailto:team@sammyjoze.com">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>
