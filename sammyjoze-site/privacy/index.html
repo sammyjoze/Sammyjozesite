@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — SammyJoze</title>
-  <meta name="description" content="Privacy Policy for Sammy Joze apps, Chrome extensions, and web products.">
+  <meta name="description" content="Privacy Policy for Sammy Joze apps, Chrome extensions, and web products, including Select Lens.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,9 +25,9 @@
     <a href="/" class="hero__back">&larr; Back to home</a>
     <span class="hero__badge">Legal</span>
     <h1>Privacy Policy</h1>
-    <p class="hero__lead">This policy explains what we collect across Sammy Joze products, how data is used, and the choices you control. It applies to every app, extension, and website we publish.</p>
+    <p class="hero__lead">This policy explains data collection, handling, storage, and sharing across Sammy Joze products. It applies to every app, Chrome extension, and website we publish.</p>
     <div class="hero__meta">
-      <span><strong>Last updated:</strong> June 30, 2026</span>
+      <span><strong>Last updated:</strong> July 18, 2026</span>
       <span><strong>Applies to:</strong> sammyjoze.com and all published apps &amp; extensions</span>
     </div>
   </section>
@@ -37,12 +37,13 @@
       <p class="toc__label">On this page</p>
       <ul>
         <li><a href="#scope">Scope</a></li>
-        <li><a href="#what-we-collect">What we collect</a></li>
+        <li><a href="#select-lens">Select Lens</a></li>
+        <li><a href="#data-collection">Data collection</a></li>
+        <li><a href="#data-handling">Data handling</a></li>
+        <li><a href="#data-storage">Data storage</a></li>
+        <li><a href="#data-sharing">Data sharing</a></li>
         <li><a href="#by-product">By product type</a></li>
-        <li><a href="#how-we-use">How we use data</a></li>
-        <li><a href="#third-party-ai">Third-party AI &amp; APIs</a></li>
-        <li><a href="#sharing">Sharing</a></li>
-        <li><a href="#retention-security">Retention &amp; security</a></li>
+        <li><a href="#chrome-limited-use">Chrome Web Store Limited Use</a></li>
         <li><a href="#your-choices">Your choices</a></li>
         <li><a href="#children">Children's privacy</a></li>
         <li><a href="#changes">Changes</a></li>
@@ -56,32 +57,90 @@
         <p>This Privacy Policy applies to <strong>sammyjoze.com</strong> and all software, Chrome extensions, web apps, desktop apps, and related services published by Sammy Joze (collectively, the &ldquo;Services&rdquo;).</p>
         <p>This is an umbrella policy covering all extensions and apps we publish, including:</p>
         <ul>
-          <li>Chrome extensions</li>
+          <li>Chrome extensions (including Select Lens and other extensions)</li>
           <li>Web apps</li>
           <li>Desktop apps</li>
           <li>Product websites that reference or link to this policy</li>
         </ul>
-        <p>By using any Service, you acknowledge this policy. In-app help or store listings may describe additional product-specific details.</p>
-      </article>
-
-      <article id="what-we-collect" class="section-card">
-        <h2>2. What we collect</h2>
-        <p>What we collect depends on which product you use. Across our Services, we may process:</p>
-        <ul>
-          <li><strong>Account information</strong> — email address, display name, authentication credentials, and profile settings when you create an account.</li>
-          <li><strong>User content</strong> — data you choose to store or submit, such as vault entries, app records, documents, or text you send to an AI provider.</li>
-          <li><strong>API keys and credentials you provide</strong> — third-party keys you enter to enable features in extensions or apps that use a bring-your-own-key model. See the product table below for where keys are stored.</li>
-          <li><strong>Website content you actively use</strong> — page text or selections you trigger an extension to read, only when you invoke a feature and only as described for that product.</li>
-          <li><strong>Service logs</strong> — operational data such as timestamps, IP addresses, device or browser type, error reports, and performance metrics needed to run and secure our Services.</li>
-          <li><strong>Support messages</strong> — information you send when contacting us for help, including email content and attachments.</li>
-        </ul>
+        <p>By using any Service, you acknowledge this policy. In-app help or Chrome Web Store listings may describe additional product-specific details.</p>
         <div class="highlight-box">
           <p><strong>We do not sell your personal information.</strong> We also do not use your data to determine creditworthiness, eligibility for a loan, or for lending purposes.</p>
         </div>
       </article>
 
+      <article id="select-lens" class="section-card">
+        <h2>2. Select Lens (Chrome extension)</h2>
+        <p>Select Lens is a Chrome extension that helps you define, summarize, simplify, or break down highlighted text using your own OpenAI API key (bring-your-own-key / BYOK). Select Lens does <strong>not</strong> require a Sammy Joze account.</p>
+        <h3>Collection</h3>
+        <p>Select Lens collects or processes only:</p>
+        <ul>
+          <li>Your <strong>OpenAI API key</strong>, which you enter in the extension settings.</li>
+          <li><strong>Highlighted page text</strong>, only when you actively run an action (Define, Steps, Summary, or Simplify).</li>
+        </ul>
+        <p>Select Lens does not collect browsing history, credentials other than the key you provide, or unrelated page content in the background.</p>
+        <h3>Handling</h3>
+        <p>When you run an action, your browser sends the highlighted text to OpenAI over <strong>HTTPS</strong>, authenticated with your OpenAI API key. Requests go <strong>browser &rarr; OpenAI</strong>. Sammy Joze does not proxy, inspect, or relay these requests.</p>
+        <h3>Storage</h3>
+        <p>Your OpenAI API key is stored only in <strong>chrome.storage.local</strong> on your device. Highlighted text and AI results are <strong>not</strong> stored on Sammy Joze servers. We do not receive or retain your API key, highlights, or AI responses.</p>
+        <h3>Sharing</h3>
+        <p>Selected text is shared with <strong>OpenAI</strong> only when you run an action, using your key and subject to OpenAI&rsquo;s terms and privacy policy. <strong>Sammy Joze does not receive your API key or highlighted text.</strong> You are responsible for your OpenAI account, usage limits, and fees.</p>
+      </article>
+
+      <article id="data-collection" class="section-card">
+        <h2>3. Data collection</h2>
+        <p>What we collect depends on which product you use. Across our Services, we may process:</p>
+        <ul>
+          <li><strong>Account information</strong> — email address, display name, authentication credentials, and profile settings when you create an account for an account-based Service.</li>
+          <li><strong>User content</strong> — data you choose to store or submit in an app (for example, vault entries or app records).</li>
+          <li><strong>API keys and credentials you provide</strong> — third-party keys you enter for BYOK features (for Select Lens, your OpenAI API key stored locally; see section 2).</li>
+          <li><strong>Website content you actively use</strong> — page text or selections an extension reads only when you invoke a feature.</li>
+          <li><strong>Service logs</strong> — for account-based Services and websites: timestamps, IP addresses, device or browser type, error reports, and performance metrics needed to run and secure the Service.</li>
+          <li><strong>Support messages</strong> — information you send when contacting us, including email content and attachments.</li>
+        </ul>
+        <p>For Select Lens specifically: we do not collect your OpenAI API key or highlighted text on our servers. See <a href="#select-lens">Select Lens (Chrome extension)</a>.</p>
+      </article>
+
+      <article id="data-handling" class="section-card">
+        <h2>4. Data handling</h2>
+        <p>We handle information we process only to:</p>
+        <ul>
+          <li><strong>Provide the Services</strong> — authenticate accounts, sync encrypted data where applicable, run apps, and deliver features you request.</li>
+          <li><strong>Operate and improve</strong> — maintain uptime, fix bugs, understand usage patterns in aggregate, and develop new features.</li>
+          <li><strong>Security and abuse prevention</strong> — detect fraud, protect accounts, and enforce our Terms of Service.</li>
+          <li><strong>Support</strong> — respond to your questions and troubleshoot issues you report.</li>
+          <li><strong>Legal compliance</strong> — meet applicable legal obligations and respond to lawful requests.</li>
+        </ul>
+        <p>For Select Lens: handling of your API key and highlighted text occurs on your device and between your browser and OpenAI. Sammy Joze does not handle that data on our servers.</p>
+        <p>We do <strong>not</strong> sell personal information. We do <strong>not</strong> use your data for creditworthiness or lending decisions. We do <strong>not</strong> use vault contents or BYOK extension data for advertising profiles.</p>
+      </article>
+
+      <article id="data-storage" class="section-card">
+        <h2>5. Data storage</h2>
+        <p>Storage depends on product type:</p>
+        <ul>
+          <li><strong>Select Lens / BYOK extensions</strong> — API keys are stored in browser local storage (for Select Lens: <code>chrome.storage.local</code> on your device only). Highlighted text and AI results are not stored on Sammy Joze servers.</li>
+          <li><strong>Account-based apps</strong> — account data and encrypted payloads may be stored on our infrastructure (or providers we use). Sensitive vault-style data is encrypted client-side before sync where the product describes that model.</li>
+          <li><strong>Utility extensions</strong> — many features use local browser storage only, as described in each Chrome Web Store listing.</li>
+          <li><strong>Support email</strong> — messages you send to us may be retained as needed to respond and for legitimate business records.</li>
+        </ul>
+        <p>We retain account and service data for as long as your account is active or as needed to provide the Service. After account deletion, we delete or anonymize data within a reasonable period, except where retention is required by law or for security (for example, backup cycles or dispute resolution).</p>
+        <p>We use industry-standard measures including encryption in transit (TLS) and access controls. No method of transmission or storage is 100% secure.</p>
+      </article>
+
+      <article id="data-sharing" class="section-card">
+        <h2>6. Data sharing</h2>
+        <p>We may share information only in these circumstances:</p>
+        <ul>
+          <li><strong>Infrastructure providers</strong> — hosting, databases, email delivery, and similar vendors that help us operate account-based Services and websites, under contractual obligations to protect data.</li>
+          <li><strong>Third parties you connect</strong> — for Select Lens, selected text goes to <strong>OpenAI</strong> when you run an action, using your API key. Sammy Joze does not receive that key or text. Other products may connect to providers you explicitly enable.</li>
+          <li><strong>Legal requirements</strong> — when required by law, regulation, legal process, or to protect the rights, safety, and security of users and Sammy Joze.</li>
+          <li><strong>Business transfers</strong> — in connection with a merger, acquisition, or sale of assets, with notice where required by law.</li>
+        </ul>
+        <p>We do <strong>not</strong> sell personal information to data brokers or advertising networks. We do <strong>not</strong> share Select Lens API keys or highlights with Sammy Joze servers or with third parties other than OpenAI as described above when you trigger a feature.</p>
+      </article>
+
       <article id="by-product" class="section-card">
-        <h2>3. By product type</h2>
+        <h2>7. By product type</h2>
         <p>The table below summarizes how data is handled across major product categories. Individual extension listings in the Chrome Web Store describe specific permissions.</p>
         <table class="data-table">
           <thead>
@@ -95,97 +154,56 @@
           <tbody>
             <tr>
               <td><strong>BYOK extensions</strong></td>
-              <td>AI-powered browser tools</td>
+              <td>Select Lens and similar AI browser tools</td>
               <td>No</td>
-              <td>We do not receive your API key or the text you select. Your API key is stored locally in the browser. When you run a feature, requests go <strong>browser &rarr; third-party provider</strong> using your key. We do not operate accounts for these extensions and do not receive API keys or selected text on our servers.</td>
+              <td>We do not receive your API key or the text you select. Keys stay on device; feature requests go browser &rarr; third-party provider (OpenAI for Select Lens).</td>
             </tr>
             <tr>
               <td><strong>Account-based apps</strong></td>
               <td>Password managers, synced data apps</td>
               <td>Yes</td>
-              <td>Account email and encrypted payloads. Sensitive data is encrypted <strong>client-side before sync</strong>. We cannot read your decrypted contents on our servers.</td>
+              <td>Account email and encrypted payloads. Sensitive data is encrypted client-side before sync where applicable. We cannot read decrypted contents on our servers.</td>
             </tr>
             <tr>
               <td><strong>Utility extensions</strong></td>
               <td>Browser productivity tools</td>
               <td>Usually no</td>
-              <td>Varies by extension. Many features use <strong>local browser storage only</strong>. Permissions and data access are described in each extension&rsquo;s Chrome Web Store listing. We collect server-side data only when a feature explicitly requires it.</td>
+              <td>Varies by extension. Many features use local browser storage only. Permissions are described in each Chrome Web Store listing.</td>
             </tr>
           </tbody>
         </table>
-        <h3>BYOK extensions (Chrome Web Store)</h3>
-        <p>For Chrome Web Store compliance: bring-your-own-key extensions store your API key on your device. Your key is sent directly from your browser to the third-party provider only when you trigger a feature. We do not collect, transmit, or store your API key or the text you select.</p>
       </article>
 
-      <article id="how-we-use" class="section-card">
-        <h2>4. How we use data</h2>
-        <p>We use information we process to:</p>
-        <ul>
-          <li><strong>Provide the Services</strong> — authenticate accounts, sync encrypted data, run apps, and deliver features you request.</li>
-          <li><strong>Operate and improve</strong> — maintain uptime, fix bugs, understand usage patterns in aggregate, and develop new features.</li>
-          <li><strong>Security and abuse prevention</strong> — detect fraud, protect accounts, and enforce our Terms of Service.</li>
-          <li><strong>Support</strong> — respond to your questions and troubleshoot issues you report.</li>
-          <li><strong>Legal compliance</strong> — meet applicable legal obligations and respond to lawful requests.</li>
-        </ul>
-        <p>We do <strong>not</strong> sell personal information. We do <strong>not</strong> use your data for creditworthiness or lending decisions. We do <strong>not</strong> use vault contents or BYOK extension data for advertising profiles.</p>
-      </article>
-
-      <article id="third-party-ai" class="section-card">
-        <h2>5. Third-party AI and APIs</h2>
-        <p>Some extensions and apps connect to third-party AI or API providers that you choose to use:</p>
-        <ul>
-          <li><strong>BYOK extensions</strong> — when you trigger a feature, selected text and your prompt are sent from your browser directly to the provider using the API key you configured. That provider&rsquo;s terms and privacy policy apply. You are responsible for your API key, usage limits, and any fees charged by the provider.</li>
-          <li><strong>Other products</strong> — if a feature integrates a third-party AI or API, we describe it in-product and update this policy as needed.</li>
-        </ul>
-        <p>We are not responsible for third-party providers&rsquo; handling of data once you direct your browser or account to connect to them.</p>
-      </article>
-
-      <article id="sharing" class="section-card">
-        <h2>6. Sharing</h2>
-        <p>We may share information only in these circumstances:</p>
-        <ul>
-          <li><strong>Infrastructure providers</strong> — hosting, databases, email delivery, analytics, and similar vendors that help us operate the Services, under contractual obligations to protect data.</li>
-          <li><strong>Third parties you connect</strong> — such as an AI or API provider when you invoke a BYOK extension, or other integrations you explicitly enable.</li>
-          <li><strong>Legal requirements</strong> — when required by law, regulation, legal process, or to protect the rights, safety, and security of users and Sammy Joze.</li>
-          <li><strong>Business transfers</strong> — in connection with a merger, acquisition, or sale of assets, with notice where required by law.</li>
-        </ul>
-        <p>We do <strong>not</strong> sell personal information to data brokers or advertising networks.</p>
-      </article>
-
-      <article id="retention-security" class="section-card">
-        <h2>7. Retention and security</h2>
-        <h3>Retention</h3>
-        <p>We retain account and service data for as long as your account is active or as needed to provide the Service. After account deletion, we delete or anonymize data within a reasonable period, except where retention is required by law or for legitimate security purposes (for example, backup cycles or dispute resolution).</p>
-        <p>BYOK extensions do not store your selected text or API keys on our servers, so there is nothing for us to retain for those items.</p>
-        <h3>Security</h3>
-        <p>We use industry-standard measures including encryption in transit (TLS), access controls, and — for account-based apps — client-side encryption before sync. No method of transmission or storage is 100% secure; we cannot guarantee absolute security.</p>
+      <article id="chrome-limited-use" class="section-card">
+        <h2>8. Chrome Web Store Limited Use</h2>
+        <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
       </article>
 
       <article id="your-choices" class="section-card">
-        <h2>8. Your choices</h2>
+        <h2>9. Your choices</h2>
         <p>Depending on the product, you can:</p>
         <ul>
           <li><strong>Export data</strong> — use in-product export tools where available.</li>
           <li><strong>Delete your account</strong> — contact us or use account deletion options in the relevant app.</li>
-          <li><strong>Revoke API keys</strong> — remove or rotate keys in extension or app settings and at your API provider.</li>
-          <li><strong>Uninstall extensions</strong> — remove Chrome extensions from your browser; local data stored by the extension is cleared according to Chrome&rsquo;s extension data rules.</li>
+          <li><strong>Revoke API keys</strong> — remove or rotate keys in extension settings (for Select Lens: clear the key from settings) and at your API provider (for example, OpenAI).</li>
+          <li><strong>Uninstall extensions</strong> — remove Chrome extensions from your browser; local data such as <code>chrome.storage.local</code> is cleared according to Chrome&rsquo;s rules.</li>
           <li><strong>Manage browser permissions</strong> — review and revoke site access or permissions granted to any extension in Chrome settings.</li>
           <li><strong>Opt out of non-essential communications</strong> — unsubscribe from marketing emails where offered; transactional and security messages may still be sent.</li>
         </ul>
       </article>
 
       <article id="children" class="section-card">
-        <h2>9. Children's privacy</h2>
+        <h2>10. Children's privacy</h2>
         <p>Our Services are not directed to children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided us personal information, contact us and we will take steps to delete it.</p>
       </article>
 
       <article id="changes" class="section-card">
-        <h2>10. Changes to this policy</h2>
+        <h2>11. Changes to this policy</h2>
         <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the &ldquo;Last updated&rdquo; date at the top of this page and, where appropriate, notify you through the Service or by email. Continued use after changes take effect constitutes acceptance of the updated policy.</p>
       </article>
 
       <article id="contact" class="contact-card">
-        <h2>11. Contact</h2>
+        <h2>12. Contact</h2>
         <p>Questions about this policy, data export, account deletion, or privacy requests:</p>
         <a class="contact-email" href="mailto:team@sammyjoze.com">team@sammyjoze.com</a>
       </article>
