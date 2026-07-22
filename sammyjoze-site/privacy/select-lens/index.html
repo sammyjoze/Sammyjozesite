@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Lens Privacy Policy — SammyJoze</title>
+  <meta name="description" content="Select Lens privacy policy: user data collection, handling, storage, and sharing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" class="site-brand">SammyJoze</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <a href="/privacy" class="hero__back">&larr; Full privacy policy</a>
+    <span class="hero__badge">Select Lens</span>
+    <h1>Select Lens Privacy Policy</h1>
+    <p class="hero__lead">This page describes <strong>user data collection</strong>, <strong>handling</strong>, <strong>storage</strong>, and <strong>sharing</strong> for the Select Lens Chrome extension. Omission of any of these sections is not permitted under Chrome Web Store policy.</p>
+    <div class="hero__meta">
+      <span><strong>Last updated:</strong> July 21, 2026</span>
+      <span><strong>Product:</strong> Select Lens (Chrome extension)</span>
+    </div>
+  </section>
+
+  <div class="legal-layout">
+    <aside class="toc" aria-label="Table of contents">
+      <p class="toc__label">On this page</p>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#user-data-collection">User data collection</a></li>
+        <li><a href="#user-data-handling">User data handling</a></li>
+        <li><a href="#user-data-storage">User data storage</a></li>
+        <li><a href="#user-data-sharing">User data sharing</a></li>
+        <li><a href="#chrome-limited-use">Chrome Web Store Limited Use</a></li>
+        <li><a href="#your-choices">Your choices</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <div class="legal-content">
+      <article id="overview" class="section-card">
+        <h2>Overview</h2>
+        <p><strong>Select Lens</strong> is a Chrome extension that helps you define, summarize, simplify, or break into steps text you highlight on a webpage. It uses your own OpenAI API key (bring-your-own-key / BYOK). No Sammy Joze account is required.</p>
+        <div class="highlight-box">
+          <p><strong>We do not sell your personal information.</strong> We do not use Select Lens data to determine creditworthiness or for lending. Sammy Joze does not receive your OpenAI API key or highlighted text on our servers.</p>
+        </div>
+      </article>
+
+      <article id="user-data-collection" class="section-card">
+        <h2>User data collection</h2>
+        <p>Select Lens collects or processes the following user data:</p>
+        <ul>
+          <li><strong>OpenAI API key</strong> — entered by you in the extension popup/settings so the extension can call OpenAI on your behalf.</li>
+          <li><strong>Highlighted webpage text</strong> — only when you actively choose an action (Define, Steps, Summary, or Simplify).</li>
+          <li><strong>Optional page context</strong> — page title and page URL may be included with the request you trigger, to improve the AI response.</li>
+        </ul>
+        <p>Select Lens does <strong>not</strong> collect browsing history in the background, passwords, payment details, or unrelated page content when you are not using a feature.</p>
+      </article>
+
+      <article id="user-data-handling" class="section-card">
+        <h2>User data handling</h2>
+        <p>How Select Lens handles user data:</p>
+        <ul>
+          <li>When you run an action, your browser sends the highlighted text (and optional page title/URL) to <strong>OpenAI</strong> over <strong>HTTPS</strong>, authenticated with your OpenAI API key.</li>
+          <li>The request path is <strong>browser &rarr; OpenAI</strong>. Sammy Joze does not proxy, inspect, or relay these requests.</li>
+          <li>Data is used only to generate the AI result for the single purpose of Select Lens (define, steps, summary, or simplify).</li>
+          <li>We do not use Select Lens data for advertising, profiling unrelated to the feature, credit decisions, or lending.</li>
+        </ul>
+      </article>
+
+      <article id="user-data-storage" class="section-card">
+        <h2>User data storage</h2>
+        <ul>
+          <li><strong>OpenAI API key</strong> — stored only in <code>chrome.storage.local</code> on your device. It is not uploaded to Sammy Joze servers.</li>
+          <li><strong>Highlighted text and AI results</strong> — shown in your browser during the session; not stored on Sammy Joze servers.</li>
+          <li><strong>Retention on device</strong> — your key remains until you remove it in Select Lens settings or uninstall the extension (Chrome then clears extension storage per Chrome rules).</li>
+          <li>Transmissions to OpenAI use modern cryptography (HTTPS/TLS).</li>
+        </ul>
+      </article>
+
+      <article id="user-data-sharing" class="section-card">
+        <h2>User data sharing</h2>
+        <p>Select Lens shares user data only as follows:</p>
+        <ul>
+          <li><strong>OpenAI</strong> — selected text (and optional page title/URL) is shared with OpenAI when you run an action, using your API key and subject to OpenAI&rsquo;s terms and privacy policy.</li>
+          <li><strong>Sammy Joze</strong> — does <strong>not</strong> receive your API key, highlighted text, or AI responses from Select Lens AI actions.</li>
+          <li><strong>Legal requirements</strong> — we may disclose information if required by law for other Sammy Joze services; Select Lens BYOK traffic does not pass through our servers.</li>
+        </ul>
+        <p>We do <strong>not</strong> sell personal information to data brokers or advertising networks. We do <strong>not</strong> transfer Select Lens user data for purposes unrelated to the extension&rsquo;s single purpose, except as allowed by the Chrome Web Store User Data Policy.</p>
+      </article>
+
+      <article id="chrome-limited-use" class="section-card">
+        <h2>Chrome Web Store Limited Use</h2>
+        <p>The use of information received from Google APIs will adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noopener noreferrer" target="_blank">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+      </article>
+
+      <article id="your-choices" class="section-card">
+        <h2>Your choices</h2>
+        <ul>
+          <li>Clear or replace your OpenAI API key in Select Lens settings at any time.</li>
+          <li>Rotate or revoke the key in your OpenAI account.</li>
+          <li>Uninstall Select Lens to remove local extension storage per Chrome rules.</li>
+          <li>Manage site/extension permissions in Chrome settings.</li>
+        </ul>
+      </article>
+
+      <article id="contact" class="contact-card">
+        <h2>Contact</h2>
+        <p>Privacy questions about Select Lens:</p>
+        <a class="contact-email" href="mailto:team@sammyjoze.com">team@sammyjoze.com</a>
+        <p style="margin-top:1rem"><a href="/privacy">Umbrella privacy policy for all Sammy Joze products</a></p>
+      </article>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; <span data-year>2026</span> SammyJoze. All rights reserved.</p>
+      <div class="site-footer__links">
+        <a href="/privacy">Privacy</a>
+        <a href="/privacy/select-lens">Select Lens privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="mailto:team@sammyjoze.com">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>
